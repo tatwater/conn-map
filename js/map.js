@@ -950,15 +950,16 @@ function initialize() {
   fitnessCenter.setMap(map);
   hale.setMap(map);
   hamilton.setMap(map);
-  harris.setMap(map);
   harkness.setMap(map);
+  harris.setMap(map);
+  healthCenter.setMap(map);
   horizon.setMap(map);
   jaFreeman.setMap(map);
   johnson.setMap(map);
   kbLarrabee.setMap(map);
   knowlton.setMap(map);
-  lazarus.setMap(map);
   lambdin.setMap(map);
+  lazarus.setMap(map);
   mobroc.setMap(map);
   morrison.setMap(map);
   newLondon.setMap(map);
@@ -972,138 +973,136 @@ function initialize() {
   smithBurdick.setMap(map);
   tansill.setMap(map);
   unity.setMap(map);
-  healthCenter.setMap(map);
   windham.setMap(map);
   winthrop.setMap(map);
   winthropAnnex.setMap(map);
   wright.setMap(map);
 
   google.maps.event.addListener(abbey, 'click', function() {
-    populateSidebar(abbyInfo);
+    populateSidebar(abbeyInfo);
   });
   google.maps.event.addListener(becker, 'click', function() {
-    console.log("Clicked becker");
+    populateSidebar(beckerInfo);
   });
   google.maps.event.addListener(bill, 'click', function() {
-    console.log("Clicked bill");
+    populateSidebar(billInfo);
   });
   google.maps.event.addListener(blackstone, 'click', function() {
-    console.log("Clicked blackstone");
+    populateSidebar(blackstoneInfo);
   });
   google.maps.event.addListener(blaustein, 'click', function() {
-    console.log("Clicked blaustein");
-    populateSidebar();
+    populateSidebar(blausteinInfo);
   });
   google.maps.event.addListener(branford, 'click', function() {
-    console.log("Clicked branford");
+    populateSidebar(branfordInfo);
   });
   google.maps.event.addListener(cels, 'click', function() {
-    console.log("Clicked cels");
+    populateSidebar(celsInfo);
   });
   google.maps.event.addListener(chapel, 'click', function() {
-    console.log("Clicked chapel");
+    populateSidebar(chapelInfo);
   });
   google.maps.event.addListener(cro, 'click', function() {
-    console.log("Clicked cro");
+    populateSidebar(croInfo);
   });
   google.maps.event.addListener(cummings, 'click', function() {
-    console.log("Clicked cummings");
+    populateSidebar(cummingsInfo);
   });
   google.maps.event.addListener(dayton, 'click', function() {
-    console.log("Clicked dayton");
+    populateSidebar(daytonInfo);
   });
   google.maps.event.addListener(fanning, 'click', function() {
-    console.log("Clicked fanning");
+    populateSidebar(fanningInfo);
   });
   google.maps.event.addListener(fitnessCenter, 'click', function() {
-    console.log("Clicked fitnessCenter");
+    populateSidebar(fitnessCenterInfo);
   });
   google.maps.event.addListener(hale, 'click', function() {
-    console.log("Clicked hale");
+    populateSidebar(haleInfo);
   });
   google.maps.event.addListener(hamilton, 'click', function() {
-    console.log("Clicked hamilton");
+    populateSidebar(hamiltonInfo);
   });
   google.maps.event.addListener(harris, 'click', function() {
-    console.log("Clicked harris");
+    populateSidebar(harrisInfo);
   });
   google.maps.event.addListener(harkness, 'click', function() {
-    console.log("Clicked harkness");
+    populateSidebar(harknessInfo);
   });
   google.maps.event.addListener(horizon, 'click', function() {
-    console.log("Clicked horizon");
+    populateSidebar(horizonInfo);
   });
   google.maps.event.addListener(jaFreeman, 'click', function() {
-    console.log("Clicked jaFreeman");
+    populateSidebar(jaFreemanInfo);
   });
   google.maps.event.addListener(johnson, 'click', function() {
-    console.log("Clicked johnson");
+    populateSidebar(johnsonInfo);
   });
   google.maps.event.addListener(kbLarrabee, 'click', function() {
-    console.log("Clicked kbLarrabee");
+    populateSidebar(kbLarrabeeInfo);
   });
   google.maps.event.addListener(knowlton, 'click', function() {
-    console.log("Clicked knowlton");
+    populateSidebar(knowltonInfo);
   });
   google.maps.event.addListener(lazarus, 'click', function() {
-    console.log("Clicked lazarus");
+    populateSidebar(lazarusInfo);
   });
   google.maps.event.addListener(lambdin, 'click', function() {
-    console.log("Clicked lambdin");
+    populateSidebar(lambdinInfo);
   });
   google.maps.event.addListener(mobroc, 'click', function() {
-    console.log("Clicked mobroc");
+    populateSidebar(mobrocInfo);
   });
   google.maps.event.addListener(morrison, 'click', function() {
-    console.log("Clicked morrison");
+    populateSidebar(morrisonInfo);
   });
   google.maps.event.addListener(newLondon, 'click', function() {
-    console.log("Clicked newLondon");
+    populateSidebar(newLondonInfo);
   });
   google.maps.event.addListener(olin, 'click', function() {
-    console.log("Clicked olin");
+    populateSidebar(olinInfo);
   });
   google.maps.event.addListener(palmer, 'click', function() {
-    console.log("Clicked palmer");
+    populateSidebar(palmerInfo);
   });
   google.maps.event.addListener(park, 'click', function() {
-    console.log("Clicked park");
+    populateSidebar(parkInfo);
   });
   google.maps.event.addListener(plant, 'click', function() {
-    console.log("Clicked plant");
+    populateSidebar(plantInfo);
   });
   google.maps.event.addListener(powerHouse, 'click', function() {
-    console.log("Clicked powerHouse");
+    populateSidebar(powerHouseInfo);
   });
   google.maps.event.addListener(ridge, 'click', function() {
-    console.log("Clicked ridge");
+    populateSidebar(ridgeInfo);
   });
   google.maps.event.addListener(shain, 'click', function() {
-    console.log("Clicked shain");
+    populateSidebar(shainInfo);
   });
   google.maps.event.addListener(smithBurdick, 'click', function() {
-    console.log("Clicked smithBurdick");
+    populateSidebar(smithBurdickInfo);
   });
   google.maps.event.addListener(tansill, 'click', function() {
-    console.log("Clicked tansill");
+    populateSidebar(tansillInfo);
   });
   google.maps.event.addListener(unity, 'click', function() {
-    console.log("Clicked unity");
+    populateSidebar(unityInfo);
   });
   google.maps.event.addListener(healthCenter, 'click', function() {
-    console.log("Clicked healthCenter");
+    populateSidebar(healthCenterInfo);
   });
   google.maps.event.addListener(windham, 'click', function() {
-    console.log("Clicked windham");
+    populateSidebar(windhamInfo);
   });
   google.maps.event.addListener(winthrop, 'click', function() {
-    console.log("Clicked winthrop");
+    populateSidebar(winthropInfo);
   });
   google.maps.event.addListener(winthropAnnex, 'click', function() {
-    console.log("Clicked winthropAnnex");
+    populateSidebar(winthropAnnexInfo);
   });
   google.maps.event.addListener(wright, 'click', function() {
-    console.log("Clicked wright");
+    populateSidebar(wrightInfo);
   });
 }
 

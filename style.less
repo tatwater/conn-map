@@ -21,6 +21,7 @@
 
 html {
   font-size: 16px;
+  overflow: hidden;
 }
 body {
   font-family: 'exo_2.0regular';
@@ -109,7 +110,7 @@ aside {
       position: absolute;
         top: 0;
         right: -4px;
-      width: 4px;
+      width: 5px;
     }
   }
   .cover {
@@ -198,6 +199,9 @@ aside {
       vertical-align: middle;
     }
   }
+  #learnMore {
+    margin: 20px 0;
+  }
   #building {
     display: none;
     margin: 20px 0;
@@ -207,6 +211,18 @@ aside {
       height: 150px;
       margin-bottom: 8px;
       width: 100%;
+    }
+    ul {
+      margin-bottom: 10px;
+
+      li {
+        opacity: .8;
+        line-height: 1.4em;
+
+        &:before {
+          content: "- ";
+        }
+      }
     }
     p {
       line-height: 1.4em;
