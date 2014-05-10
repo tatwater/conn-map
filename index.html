@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_-jbkNsat68aDbVRKnEMYi7V86Syz3B0&sensor=false"></script>
+    <script src="js/buildings.js"></script>
+    <script src="js/map.js"></script>
+    <script>
+      function populateSidebar(attributes) {
+        $('#learnMore').hide();
+        $('#building').show();
+        $('#buildingTitle').html(attributes[0]);
+
+        var buildingAttr = $('#buildingAttr').html();
+        buildingAttr = "";
+        var numAttr = attributes[2].length;
+        for (var i = 0; i < numAttr; i++) {
+          buildingAttr += "<li>";
+          buildingAttr += attributes[2][i];
+          buildingAttr += "</li>";
+        }
+        console.log(buildingAttr);
+        $('#buildingAttr').html(buildingAttr);
+
+        $('#buildingDesc').html(attributes[3]);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="noselect">
+      <div class="inside">
+        <h1>Connecticut College Interactive Map (ALPHA)</h1>
+      </div>
+    </header>
+    <input id="toggle-sidebar" type="checkbox" />
+    <aside>
+      <label class="toggle-sidebar" for="toggle-sidebar"></label>
+      <label class="cover" for="toggle-sidebar"></label>
+      <form>
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Crozier Williams" />
+        <input type="submit" value="Go" />
+      </form>
+      <h2>Explore</h2>
+      <div class="filter">
+        <input id="residence" name="filter" type="checkbox" />
+        <label for="residence" style="color: #9c655e;">Residence Halls</label>
+      </div>
+      <div class="filter">
+        <input id="food" name="filter" type="checkbox" />
+        <label for="food" style="color: #5e769c;">Food</label>
+      </div>
+      <div class="filter">
+        <input id="libraries" name="filter" type="checkbox" />
+        <label for="libraries" style="color: #769c5e;">Libraries</label>
+      </div>
+      <div class="filter">
+        <input id="academic" name="filter" type="checkbox" />
+        <label for="academic" style="color: #9c5e95;">Academic Buildings</label>
+      </div>
+      <div class="filter">
+        <input id="athletics" name="filter" type="checkbox" />
+        <label for="athletics" style="color: #54867c;">Athletic Centers</label>
+      </div>
+      <div class="filter">
+        <input id="theaters" name="filter" type="checkbox" />
+        <label for="theaters" style="color: #959c5e;">Theaters</label>
+      </div>
+      <div class="filter">
+        <input id="parking" name="filter" type="checkbox" />
+        <label for="parking" style="">Parking</label>
+      </div>
+      <h2 id="learnMore">Select a building to learn more!</h2>
+      <div id="building">
+        <h2 id="buildingTitle">Select a building to learn more!</h2>
+        <div class="img"></div>
+        <ul id="buildingAttr"></ul>
+        <p id="buildingDesc"><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. --></p>
+      </div>
+    </aside>
+    <div id="map-canvas"></div>
+  </body>
+</html>
